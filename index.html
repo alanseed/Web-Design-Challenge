@@ -8,24 +8,31 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand">Latitude</a>
       </div>
-      <ul class="nav navbar-nav">
-        <li>     
-          <div class="dropdown">
-            <button class="btn navbar-btn dropdown-toggle" type="button" data-toggle="dropdown">Plots<span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><a href="visualisations/Fig1.html">Fig1</a></li>
-              <li><a href="visualisations/Fig2.html">Fig2</a></li>
-              <li><a href="visualisations/Fig3.html">Fig3</a></li>
-              <li><a href="visualisations/Fig4.html">Fig4</a></li>
-            </ul>
-          </div>
-        
-        </li>
-        <li><a href="#">Comparison</a></li>
-        <li><a href="#">Data</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id = navbar-collapse-1>
+        <ul class="nav navbar-nav">
+          <li>     
+            <div class="dropdown">
+              <button class="btn navbar-btn dropdown-toggle" type="button" data-toggle="dropdown">Plots<span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="visualisations/Fig1.html">Fig1</a></li>
+                <li><a href="visualisations/Fig2.html">Fig2</a></li>
+                <li><a href="visualisations/Fig3.html">Fig3</a></li>
+                <li><a href="visualisations/Fig4.html">Fig4</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Comparison</a></li>
+          <li><a href="#">Data</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
