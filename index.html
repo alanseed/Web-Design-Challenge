@@ -4,13 +4,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <style>
+    .card {
+        width: 20rem;
+        margin: 2rem;
+    }
+      
+    .image-grid-container {
+        display: grid;
+  
+        /* For 2 columns */
+        grid-template-columns: auto auto;
+    }
+    img {
+        width: 100%;
+    }
+  </style>
 </head>
 
 <body>
 
 <!--Nav bar -->
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <div class="container-fluid">
+  <div class="container-fluid overflow="visisble">
     <div class="navbar-brand">Latitude</div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,52 +61,39 @@
 <!--Nav bar -->
 
 <!--Content of the page -->
-  <div class="container-fluid">
-    <div class="row">
-
-      <!--Put the text into a card -->
-      <div class="col-sm-4">
-        <div class="card">
-          <div class = "card-body">
-            <h2 class="card-title">Latitude</h2>
-            <p class ="card-text"> 
-              The weather is made up of a lot of different components for example temperature, 
-              wind, rain, cloudiness, and humidity.The weather is hot and steamy all the year round near the equator and freezing cold 
-              near the poles, but how does the climate (the weather that you expect on average) change
-              with latitude?   
-            </p>
-            <p class = "card-text">
-              To answer this question, measurements from weather stations around the world were collected on 13th June 2018 at around 15:00 UTC 
-              (the time at 0 degrees of longitude) and plots were made of various weather elements against the latitude of the weather station. 
-            </p>
-            <p class ='card-text'> 
-              Click on the thumbnails on the right to find out if temperature, humidity, cloudiness, and wind speed depend on the latitude of 
-              the weather station.  
-            </p>            
-          </div>
-        </div>
+  <div class="card-group">
+    <div class="card">
+      <div class = "card-body">
+        <h2 class="card-title">Latitude</h2>
+        <p class ="card-text"> 
+          The weather is made up of a lot of different components for example temperature, 
+          wind, rain, cloudiness, and humidity.The weather is hot and steamy all the year round near the equator and freezing cold 
+          near the poles, but how does the climate (the weather that you expect on average) change
+          with latitude?   
+        </p>
+        <p class = "card-text">
+          To answer this question, measurements from weather stations around the world were collected on 13th June 2018 at around 15:00 UTC 
+          (the time at 0 degrees of longitude) and plots were made of various weather elements against the latitude of the weather station. 
+        </p>
+        <p class ='card-text'> 
+          Click on the thumbnails on the right to find out if temperature, humidity, cloudiness, and wind speed depend on the latitude of 
+          the weather station.  
+        </p>            
       </div>
-      <!--Put the text into a card -->
-    
-      <!--Grid of images on the right-->
-
-        <div class="col-sm-4">
-          <a href="visualisations/Fig1.html">
-            <img src="Resources/assets/images/Fig1.png" class="img-thumbnail" alt="" ></a>
-          <a href="visualisations/Fig2.html">
-            <img src="Resources/assets/images/Fig2.png" class="img-thumbnail" alt="" ></a>  
-        </div>
-        <div class="col-sm-4">
-          <a href="visualisations/Fig3.html">
-            <img src="Resources/assets/images/Fig3.png" class="img-thumbnail" alt="" ></a>
-          <a href="visualisations/Fig4.html">
-            <img src="Resources/assets/images/Fig4.png" class="img-thumbnail" alt="" ></a>  
-        </div>
-      
-      <!--Grid of images on the right-->
     </div>
+    <div class="card"> 
+      <div class="image-grid-container"> 
+        <a href="visualisations/Fig1.html">
+        <img src="Resources/assets/images/Fig1.png" class="img-thumbnail" alt="" ></a> 
+        <a href="visualisations/Fig2.html">
+        <img src="Resources/assets/images/Fig2.png" class="img-thumbnail" alt="" ></a> 
+        <a href="visualisations/Fig3.html">
+        <img src="Resources/assets/images/Fig3.png" class="img-thumbnail" alt="" ></a>
+        <a href="visualisations/Fig4.html">
+        <img src="Resources/assets/images/Fig4.png" class="img-thumbnail" alt="" ></a>  
+      </div>
+    </div> 
   </div>
 <!--Content of the page -->
 </body>
-
 </html>
